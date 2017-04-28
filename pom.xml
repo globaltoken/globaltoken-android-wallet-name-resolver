@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.netki</groupId>
-    <artifactId>wallet-name-resolver</artifactId>
+    <groupId>org.globaltoken</groupId>
+    <artifactId>globaltoken-android-wallet-name-resolver</artifactId>
     <version>0.1.4</version>
     <packaging>jar</packaging>
 
@@ -83,6 +83,10 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+		<repository>
+		   <id>localrepository</id>
+		   <url>file://${basedir}/repository</url>
+		</repository>
     </repositories>
 
     <dependencies>
@@ -108,9 +112,9 @@
             <version>1.1.1</version>
         </dependency>
         <dependency>
-            <groupId>org.bitcoinj</groupId>
-            <artifactId>bitcoinj-core</artifactId>
-            <version>0.13.5</version>
+            <groupId>org.globaltokenj</groupId>
+            <artifactId>globaltokenj-core</artifactId>
+            <version>0.15-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
